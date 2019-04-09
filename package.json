@@ -1,0 +1,25 @@
+{
+    "name": "mylang",
+    "displayName": "mylang",
+    "description": "",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.33.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "ipw",
+            "aliases": ["IPW", "ipw"],
+            "extensions": ["wfs"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "ipw",
+            "scopeName": "source.ipw",
+            "path": "./syntaxes/ipw.tmLanguage.json"
+        }]
+    }
+}
