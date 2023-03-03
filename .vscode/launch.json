@@ -5,6 +5,18 @@
 {
 	"version": "0.2.0",
     "configurations": [
+    {
+        "name": "(lldb) Hello.c",
+        "type": "cppdbg",
+        "request": "launch",
+        "program": "${workspaceFolder}/hello",
+        "args": [],
+        "stopAtEntry": false,
+        "cwd": "${fileDirname}",
+        "environment": [],
+        "externalConsole": false,
+        "MIMode": "lldb"
+    },
         {
             "name": "Extension",
             "type": "extensionHost",

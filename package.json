@@ -1,25 +1,55 @@
 {
-    "name": "mylang",
-    "displayName": "mylang",
-    "description": "",
-    "version": "0.0.1",
-    "engines": {
-        "vscode": "^1.33.0"
-    },
-    "categories": [
-        "Programming Languages"
+  "name": "mylang",
+  "displayName": "mylang",
+  "description": "",
+  "version": "0.0.2",
+  "engines": {
+    "vscode": "^1.33.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "ipw",
+        "aliases": [
+          "IPW",
+          "ipw"
+        ],
+        "extensions": [
+          "wfs"
+        ],
+        "configuration": "./language-configuration.json"
+      },
+      {
+        "id": "sw",
+        "aliases": [
+          "SW",
+          "sw"
+        ],
+        "extensions": [
+          "con",
+          "file"
+        ],
+        "configuration": "./language-configuration.json"
+      }
     ],
-    "contributes": {
-        "languages": [{
-            "id": "ipw",
-            "aliases": ["IPW", "ipw"],
-            "extensions": ["wfs"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "ipw",
-            "scopeName": "source.ipw",
-            "path": "./syntaxes/ipw.tmLanguage.json"
-        }]
-    }
+    "grammars": [
+      {
+        "language": "ipw",
+        "scopeName": "source.ipw",
+        "path": "./syntaxes/ipw.tmLanguage.json"
+      },
+      {
+        "language": "sw",
+        "scopeName": "source.sw",
+        "path": "./syntaxes/sw.tmLanguage.json"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chieyuan/mylang.git"
+  }
 }

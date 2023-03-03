@@ -14,6 +14,8 @@
     // symbols that are auto closed when typing
     "autoClosingPairs": [
         ["{", "}"],
+        ["(\\w+) {", "} \\1"],
+        ["(Define) {", "} \\$1"],
         ["[", "]"],
         ["(", ")"],
         ["\"", "\""],

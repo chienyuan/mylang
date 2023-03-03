@@ -1,0 +1,14 @@
+Define {
+    Hello {
+        Print("Hello")
+    } Hello
+} Define
+
+// this is commend
+Hello()
+
+Define {
+    Hello2 {
+
+    } Hello2
+} Define

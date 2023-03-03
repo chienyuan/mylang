@@ -1,6 +1,6 @@
 # mylang README
 
-This is the README for your extension "mylang". After writing up a brief description, we recommend including the following sections.
+This is simple example vscode extension.
 
 ## Features
 

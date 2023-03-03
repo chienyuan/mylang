@@ -1,0 +1,69 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "IPW",
+	"scopeName": "source.ipw",
+	"patterns": [
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#tags"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#functions"
+		}
+	],
+	"repository": {
+		"comments": {
+			"patterns": [
+				{
+					"name": "comment.block.ipw",
+					"begin": "//",
+					"end": "$"
+				}
+			]
+		},
+		"tags": {
+			"patterns": [
+				{
+					"name": "keyword.control.ipw",
+					"match": "\\b\\<(\\w+)\\>\\b"
+				}
+			]
+		},
+		"functions": {
+			"patterns": [
+				{
+					"name": "keyword.function.ipw",
+					"match": "\\b(Print)\\b"
+				},
+				{
+					"name": "keyword.function.ipw",
+					"match": "\\b(Substring)\\b"
+				},
+				{
+					"match": "(\\w+)\\s*\\(",
+					"captures": {
+						"1": {
+							"name": "keyword.function.ipw"
+						}
+					}
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.ipw",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.ipw",
+					"match": "\\\\."
+				}
+			]
+		}
+	}
+}
